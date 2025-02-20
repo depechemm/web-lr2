@@ -1,0 +1,132 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    color: rgb(244, 244, 244);
+}
+
+.site-name {
+    color: rgb(42, 53, 44);
+    text-align: center;
+    font-size: 60px;
+    margin: auto;
+    margin-bottom: 40px;
+    width: 600px;
+    background: linear-gradient(90deg, #351b6c, #a44ba2, #f28100);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.clock-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(0, 310px));
+    gap: 20px;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.clock-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 450px;
+    width: 300px;
+    border-radius: 50px;
+    border: 2px;
+    border-style: solid;
+    border-color: rgb(42, 53, 44);
+}
+
+.morning-background {
+    background-image: url('img/morning.jpg');
+    background-size: cover;
+}
+
+.afternoon-background {
+    background-image: url('img/afternoon.jpg');
+    background-size: cover;
+}
+
+.evening-background {
+    background-image: url('img/evening.jpg');
+    background-size: cover;
+}
+
+.night-background {
+    background-image: url('img/night.jpg');
+    background-size: cover;
+}
+
+.date-heading {
+    font-weight: 100;
+    font-size: 20px;
+    margin: 0;
+}
+
+.city-heading {
+    font-size: 35px;
+    margin: 0 0 20px 0;
+}
+
+.actions {
+    display: flex;
+    gap: 20px;
+    width: 640px;
+    justify-content: center;
+    margin: auto;
+}
+
+.timezone-select {
+    font-size: 30px;
+    cursor: pointer;
+    color: rgb(42, 53, 44);
+    width: 300px;
+    height: 50px;
+    font-weight: 700;
+    outline: none;
+    border-width: 2px;
+    border-color: rgb(42, 53, 44);
+    border-radius: 50px;
+    padding: 5px;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+}
+
+.button-add {
+    all: unset;
+    cursor: pointer;
+    height: 50px;
+    font-size: 30px;
+    font-weight: 700;
+    background-color: rgb(255, 255, 255);
+    border: solid;
+    padding: 0 10px 0 10px;
+    border-width: 2px;
+    color: rgb(42, 53, 44);
+    border-color: rgb(42, 53, 44);
+    border-radius: 50px;
+    transition: all 0.5s;
+}
+
+.button-add:hover {
+    background-color: rgb(42, 53, 44);
+    color: rgb(255, 255, 255);
+}
+
+.button-delete {
+    all: unset;
+    cursor: pointer;
+    height: 40px;
+    width: 250px;
+    text-align: center;
+    color: rgb(42, 53, 44);
+    font-size: 30px;
+    font-weight: 700;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px;
+    transition: all 0.5s;
+    margin-top: 20px;
+}
+
+.button-delete:hover {
+    transform: scale(1.05);
+}
